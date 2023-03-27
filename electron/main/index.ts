@@ -1,7 +1,7 @@
 import { app, BrowserWindow, shell, ipcMain } from "electron";
 import { release } from "node:os";
 import { join } from "node:path";
-import installExtension, { VUEJS3_DEVTOOLS } from 'electron-devtools-installer';
+import installExtension, { VUEJS3_DEVTOOLS } from "electron-devtools-installer";
 
 // The built directory structure
 //
@@ -79,10 +79,10 @@ async function createWindow() {
 }
 
 app.whenReady().then(() => {
-  createWindow()
+  createWindow();
   installExtension(VUEJS3_DEVTOOLS)
-  .then((name) => console.log(`Added Extension:  ${name}`))
-  .catch((err) => console.log('An error occurred: ', err));
+    .then((name) => console.log(`Added Extension:  ${name}`))
+    .catch((err) => console.log("An error occurred: ", err));
 });
 
 app.on("window-all-closed", () => {
