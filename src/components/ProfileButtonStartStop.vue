@@ -18,9 +18,9 @@
 
 <script setup>
 import fs from "fs";
-import { useProfilesStore } from "../stores/useProfilesStore";
-import { useBrowserStore } from "../stores/useBrowserStore";
 import { useToast } from "vue-toastification";
+import { useBrowserStore } from "../stores/useBrowserStore";
+import { useProfilesStore } from "../stores/useProfilesStore";
 
 // const puppeteer = require("puppeteer");
 const { executablePath } = require("puppeteer");
