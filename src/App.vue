@@ -23,6 +23,7 @@
             <td>
               <div class="flex items-center">
                 <ButtonStartStopProfile :id="profile.id" />
+                <!-- <BotStartStop :id="profile.id" /> -->
 
                 <div class="dropdown dropdown-right">
                   <label tabindex="0" class="btn btn-sm ml-2">
@@ -97,15 +98,15 @@
 </template>
 
 <script setup lang="ts">
+import {
+  DocumentDuplicateIcon,
+  EllipsisVerticalIcon,
+  TrashIcon,
+} from "@heroicons/vue/24/solid";
 import ProfileButtonCreate from "./components/ProfileButtonCreate.vue";
 import ButtonStartStopProfile from "./components/ProfileButtonStartStop.vue";
 import { useBrowserStore } from "./stores/useBrowserStore";
 import { useProfilesStore } from "./stores/useProfilesStore";
-import {
-  EllipsisVerticalIcon,
-  DocumentDuplicateIcon,
-  TrashIcon,
-} from "@heroicons/vue/24/solid";
 
 const profileStore = useProfilesStore();
 const browserStore = useBrowserStore();
