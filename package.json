@@ -47,7 +47,7 @@
     "@vueuse/core": "^9.13.0",
     "daisyui": "^2.51.1",
     "pinia": "^2.0.32",
-    "puppeteer": "^19.7.2",
+    "puppeteer": "^20.5.0",
     "puppeteer-extra": "^3.3.4",
     "puppeteer-extra-plugin-stealth": "^2.11.1",
     "vue-toastification": "^2.0.0-rc.5"
